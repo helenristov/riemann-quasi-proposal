@@ -52,11 +52,11 @@ Both terms grow like $2e^{U/2}$ by the prime number theorem and partial summatio
 
 **Where a zero enters.** For $\mathrm{Re}(z)>1/2$ the Laplace transform satisfies
 
-$$
+```math
 z\int_0^\infty e^{-zU}D(U)\,dU
 =-\frac{\zeta'(\tfrac12+z)}{\zeta(\tfrac12+z)}
 -\frac{1}{z-\tfrac12}-\frac{1}{z+\tfrac12}.
-$$
+```
 
 The logarithmic derivative sums the prime-power spikes. The two rational terms subtract the background and cancel the zeta-pole contribution at $z=1/2$. A hypothetical zeta zero at $0.60+i\gamma$ would give the continued right-hand side a pole at $0.10+i\gamma$. The proposed polynomial bound would make the left-hand side holomorphic throughout $\mathrm{Re}(z)>0$. That excludes every zero to the right of $1/2$. The functional equation reflects any zero on the left to one on the right. [NIST DLMF, Eq. 27.4.12](https://dlmf.nist.gov/27.4.E12) · [NIST DLMF, reflection formula](https://dlmf.nist.gov/25.4.E3)
 
