@@ -14,6 +14,8 @@ $$
 
 With $r$ fixed, this is a fixed shape translated by $\log c$. The experiment requires $c-2h\ge1$ to keep the full window on the positive half of the log axis. The weight of each spike times its window value simplifies to $\Lambda(n)B((n-c)/h)/\sqrt c$. [Unser, Aldroubi and Eden, *B-Spline Signal Processing*, Part I](https://bigwww.epfl.ch/publications/unser9301.pdf)
 
+At integer centre $c=p^j$ and absolute width $h=1/4$, the spline samples only $p^j$. Since $B(0)=2/3$, its prime-side sum is $2\log p/(3\sqrt{p^j})$. This also gives a way to compare character weights. In Crossley’s 547/727 prime-ideal race the weight at $p^j$ is multiplied by $\sum_\chi\chi(p)^j$. At 2 the two nonzero character values are $1$ and $-1$, so the weighted spline sums at centres 2 and 4 are $0$ and $2\log(2)/3$. Under Dirichlet GRH the same two traces can be recovered from limiting prime-race measurements. [Crossley, *Tuning a prime race to one prime power*](https://doi.org/10.5281/zenodo.24412652)
+
 ## Three evaluations of the spike total
 
 1. Sum $\Lambda(n)\phi_c(\log n)/\sqrt n$ over prime powers.
