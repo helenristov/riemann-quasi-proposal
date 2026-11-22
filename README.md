@@ -27,6 +27,19 @@ At both $u=k\log p$ and $u=-k\log p$, for $k\ge1$, place a spike of weight $\log
 
 </details>
 
+### Quasicrystal structure
+
+![An eightfold patch of the Ammann–Beenker tiling. Eight violet rhombi meet at its center, surrounded by teal squares and more rhombi.](figures/ammann-beenker.svg)
+
+**An eightfold tiling.** Follow the eight violet rhombi around the center. Rotating this patch by 45° brings each tile onto a tile of the same shape. The infinite Ammann–Beenker arrangement of squares and rhombi has no repeating unit cell. [Baake and Grimm, *Mathematical diffraction of aperiodic structures*](https://arxiv.org/abs/1205.3633) · [Code that draws this patch](figures/draw_ammann_beenker.py)
+
+| A single quasicrystal grain | A measured electron-diffraction pattern |
+|:---:|:---:|
+| <img src="figures/ho-mg-zn-grain.jpg" width="280" alt="A metallic Ho–Mg–Zn grain with flat pentagonal faces, photographed on a millimeter grid."> | <img src="figures/zn-mg-ho-diffraction.jpg" width="232" alt="Sharp bright spots surrounding the central beam in an electron-diffraction measurement of an icosahedral Zn–Mg–Ho quasicrystal."> |
+| The pentagonal faces of this holmium–magnesium–zinc grain have edges about 2.2 mm long. [Photograph by Ames Laboratory, U.S. Department of Energy, public domain in the U.S.](https://commons.wikimedia.org/wiki/File:Ho-Mg-ZnQuasicrystal.jpg) | The bright spots mark directions where electron waves scattered by a quasicrystal in the same alloy family reinforce one another. [Image by Materialscientist](https://commons.wikimedia.org/wiki/File:Zn-Mg-HoDiffraction.JPG) · [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+
+Diffraction makes spatial order visible in frequency space. The arithmetic analogy begins with weighted points on a line at $k\log p$. The explicit formula connects their background-corrected pattern to the zeta zeros. [Arias de Reyna, Theorem 3](https://arxiv.org/html/2402.10604v2)
+
 ## 2. Identify the estimate that would force the zeros onto the line
 
 Let $U\ge0$ and $X=e^U$. Count every spike up to and including $X$ on the positive side. Subtract the integral of the background to get
