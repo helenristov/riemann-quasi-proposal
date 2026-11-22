@@ -1,6 +1,6 @@
 # From primes to zeros
 
-The usual explicit formula starts with the zeros of the Riemann zeta function and reconstructs a staircase that jumps at prime powers. A zero $\rho$ contributes the oscillating term $-x^\rho/\rho$. **Run that picture backward. Can the locations and weights of the prime powers force every nontrivial zero onto the line $\operatorname{Re}s=1/2$?** This repository follows that question from a pair of nearby prime powers to the estimate an independent proof would need. [Von Mangoldt’s explicit formula, lecture 13](https://www2.math.uu.se/~ast10761/analtalt08/www_notes.pdf)
+The usual explicit formula starts with the zeros of the Riemann zeta function and reconstructs a staircase that jumps at prime powers. A zero $\rho$ contributes the oscillating term $-x^\rho/\rho$. **Run that picture backward. Can the locations and weights of the prime powers force every nontrivial zero onto the line $\mathrm{Re}(s)=1/2$?** This repository follows that question from a pair of nearby prime powers to the estimate an independent proof would need. [Von Mangoldt’s explicit formula, lecture 13](https://www2.math.uu.se/~ast10761/analtalt08/www_notes.pdf)
 
 Freeman Dyson suggested classifying one-dimensional quasicrystals and looking for one that identifies the zeta zeros. Juan Arias de Reyna later gave a precise criterion involving a signed measure built from primes. The divisor-lattice experiment below explores one way to approach that criterion. [Dyson, *Birds and Frogs*](https://www.ams.org/notices/200902/rtx090200212p.pdf) · [Dyson’s quasicrystal passage](https://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/dyson-quasicrystal.htm) · [Arias de Reyna, Theorem 3](https://arxiv.org/html/2402.10604v2)
 
@@ -37,7 +37,7 @@ $$
 
 Both terms grow like $2e^{U/2}$ by the prime number theorem and partial summation. The target is to establish **fixed constants** $C,A\ge0$ such that $|D(U)|\le C(1+U)^A$ for **every** $U\ge0$. This would make the signed measure tempered, meaning that it acts continuously on smooth, rapidly decreasing test functions. One way to see the implication is to extend $D$ to an odd function on the line. A polynomially bounded function defines a tempered distribution, and so does its distributional derivative. That derivative is the spikes minus the background. Arias de Reyna uses the opposite overall sign and proves that temperedness of his measure is equivalent to RH. [Arias de Reyna, Theorem 3](https://arxiv.org/html/2402.10604v2)
 
-**Where a zero enters.** For $\operatorname{Re}z>1/2$ the Laplace transform satisfies
+**Where a zero enters.** For $\mathrm{Re}(z)>1/2$ the Laplace transform satisfies
 
 $$
 z\int_0^\infty e^{-zU}D(U)\,dU
@@ -45,7 +45,7 @@ z\int_0^\infty e^{-zU}D(U)\,dU
 -\frac{1}{z-\tfrac12}-\frac{1}{z+\tfrac12}.
 $$
 
-The logarithmic derivative sums the prime-power spikes. The two rational terms subtract the background and cancel the zeta-pole contribution at $z=1/2$. A hypothetical zeta zero at $0.60+i\gamma$ would give the continued right-hand side a pole at $0.10+i\gamma$. The proposed polynomial bound would make the left-hand side holomorphic throughout $\operatorname{Re}z>0$. That excludes every zero to the right of $1/2$. The functional equation reflects any zero on the left to one on the right. [NIST DLMF, Eq. 27.4.12](https://dlmf.nist.gov/27.4.E12) · [NIST DLMF, reflection formula](https://dlmf.nist.gov/25.4.E3)
+The logarithmic derivative sums the prime-power spikes. The two rational terms subtract the background and cancel the zeta-pole contribution at $z=1/2$. A hypothetical zeta zero at $0.60+i\gamma$ would give the continued right-hand side a pole at $0.10+i\gamma$. The proposed polynomial bound would make the left-hand side holomorphic throughout $\mathrm{Re}(z)>0$. That excludes every zero to the right of $1/2$. The functional equation reflects any zero on the left to one on the right. [NIST DLMF, Eq. 27.4.12](https://dlmf.nist.gov/27.4.E12) · [NIST DLMF, reflection formula](https://dlmf.nist.gov/25.4.E3)
 
 ## 3. Rebuild the spikes from divisor lattices
 

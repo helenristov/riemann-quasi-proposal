@@ -18,11 +18,11 @@ With $r$ fixed, this is a fixed shape translated by $\log c$. The experiment req
 
 1. Sum $\Lambda(n)\phi_c(\log n)/\sqrt n$ over prime powers.
 2. For every $d\le\lfloor c+2h\rfloor$, sum $B((md-c)/h)$ over multiples of $d$ and give that sum coefficient $-\mu(d)\log(d)/\sqrt c$.
-3. Evaluate the same lattice sums in Fourier space. With $\operatorname{sinc}(a)=\sin(a)/a$ and $\operatorname{sinc}(0)=1$, the transform of $B$ is $\operatorname{sinc}^4(\pi\xi)$ under the convention $e^{-2\pi i\xi x}$. Poisson summation gives
+3. Evaluate the same lattice sums in Fourier space. With $\mathrm{sinc}(a)=\sin(a)/a$ and $\mathrm{sinc}(0)=1$, the transform of $B$ is $\mathrm{sinc}^4(\pi\xi)$ under the convention $e^{-2\pi i\xi x}$. Poisson summation gives
 
 $$
 \sum_{m\in\mathbb Z}B((md-c)/h)
-=\frac hd\left[1+2\sum_{j\ge1}\operatorname{sinc}^4(\pi h j/d)\cos(2\pi c j/d)\right].
+=\frac hd\left[1+2\sum_{j\ge1}\mathrm{sinc}^4(\pi h j/d)\cos(2\pi c j/d)\right].
 $$
 
 The code keeps $1\le j\le K$ along with their negative-frequency partners and the zero mode. Using $|\sin a|\le1$ and $\sum_{j>K}j^{-4}\le1/(3K^3)$ bounds the entire omitted Fourier tail, after divisor weighting, by
